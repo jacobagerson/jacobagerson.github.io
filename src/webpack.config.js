@@ -3,36 +3,38 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-
 module.exports = {
-  entry: './src/index.js',
-  watch: true,
+  mode: 'development',
+  // IMPORTANT: If your config is inside the 'src' folder, use './index.js'
+  // If your config is in the project root, use './src/index.js'
+  entry: './src/index.js', 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/bundle.js'
+    filename: 'js/bundle.js',
+    clean: true, // Cleans the dist folder before building
+  },
+  // This is the missing block that caused the crash!
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    watchFiles: ['index.html', '*.scss', '*.js'], // Watch for changes
+    hot: true,
+    open: true,
   },
   module: {
     rules: [{
-      test: /.s?css$/,
+      test: /\.s?css$/,
       use: [
           MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              // options...
-            }
-          }
+          'css-loader',
+          'sass-loader'
         ]
     }]
   },
   optimization: {
+    minimize: true,
     minimizer: [
-      // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
-      // `...`,
       new CssMinimizerPlugin(),
       new TerserJSPlugin({})
     ],
