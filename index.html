@@ -255,60 +255,36 @@
           <div class="tile">
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Synth-esthesia: A Wireless ESP32-based Drawing Instrument</p>
-                <figure class="image is-3by3">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img//EMID/fin_product.png">
+                <p class="title has-text-centered">Synth-esthesia: A Wireless ESP32-based Drawing Instrument</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-1-modal" src="img/EMID/fin_product.png" style="object-fit: contain;">
                 </figure>
               </article>
             </div>
 
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">5 Stage Pipelined Arm CPU in VHDL</p>
+                <p class="title has-text-centered">5 Stage Pipelined Arm CPU (VHDL)</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
+                  <img class="modal-trigger" data-target="project-2-modal" src="img/EE25/pro_diagram.png" style="object-fit: contain;">
                 </figure>
               </article>
             </div>
 
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Embedded Smart Watch Mini-Golf Game</p>
+                <p class="title has-text-centered">Embedded Smart Watch Mini-Golf Game</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Chrome Dino Accelerator in VHDL</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
+                  <img class="modal-trigger" data-target="project-3-modal" src="img/EE14/fin_prod.png" style="object-fit: contain;">
                 </figure>
               </article>
             </div>
 
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title has-text-centered">Chrome Dino Accelerator (VHDL)</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
-                </figure>
-              </article>
-            </div>
-
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
+                  <img class="modal-trigger" data-target="project-4-modal" src="img/ES4/start_screen.jpg" style="object-fit: contain;">
                 </figure>
               </article>
             </div>
@@ -436,7 +412,7 @@
       <div class="content">
         <h2 class="title is-4">Project Description</h2>
         <p>
-          The ESP32 IMU wireless remote is a custom-designed PCB built around an ESP32-WROOM-32 microcontroller and an InvenSense MPU-6050 6-axis IMU. The remote captures motion data from the IMU, processes it, and transmits the resulting orientation data wirelessly over Wi-Fi to the Synth-esthesia painting interface. The remote is powered by a rechargeable LiPo battery, and includes power management circuitry to ensure efficient operation and battery longevity. The PCB was designed using KiCAD, fabricated by JLCPCB, and assembled by hand in Tufts' Halligan Labs!
+          The ESP32 IMU wireless remote is a custom-designed PCB built around an ESP32-WROOM-32 microcontroller and an InvenSense MPU-6050 IMU. The remote captures motion data from the IMU, processes it, and transmits the resulting orientation data wirelessly over Wi-Fi to the Synth-esthesia painting interface. The remote is powered by a rechargeable LiPo battery, and includes power management circuitry ensuring ~1 hour of use time between charges. The PCB was designed using KiCAD, fabricated by JLCPCB, and assembled by hand in Tufts' Halligan Labs!
         </p>
         <p>
           Key features of the ESP32 IMU wireless remote include:
@@ -512,38 +488,53 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">5 Stage Pipelined ARM CPU in VHDL</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
 
-        <div id="project-2-modal-carousel" class="carousel">
+        <div class="content">
+          <p>
+            <strong>Project Repository:</strong> 
+            <a href="https://github.com/jacobagerson/EE25_Pipelined_CPU" target="_blank">
+              github.com/jacobagerson/EE25_Pipelined_CPU
+            </a>
+          </p>
+
+          <p>Designed and implemented a 5-stage pipelined ARM CPU architecture in VHDL as part of an advanced digital design course. The processor implements a subset of the ARM instruction set with a classical 5-stage pipeline (Fetch, Decode, Execute, Memory, Write-back) optimized for performance and resource efficiency on FPGA.</p>
+
+          <h2 class="title is-4">Key Features</h2>
+          <ul>
+            <li>5-stage pipeline architecture for increased throughput</li>
+            <li>Subset of ARM instruction set support (data processing, memory operations, branches)</li>
+            <li>Forwarding and hazard detection logic to minimize pipeline stalls</li>
+            <li>16-bit data width with 32-bit program counter</li>
+            <li>Implemented in VHDL and synthesized on Xilinx FPGA</li>
+            <li>Full testbench with comprehensive test vectors</li>
+          </ul>
+
+          <h2 class="title is-4">Architecture Overview</h2>
+          <p>The pipeline stages include instruction fetching from ROM, instruction decoding with register file access, ALU execution, memory read/write operations, and register write-back. The design includes hazard detection for data dependencies and control flow changes.</p>
+        </div>
+
+        <div id="project-2-modal-carousel" class="carousel mt-5">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="img/EE25/pro_diagram.png" style="object-fit: contain;">
+            <figcaption class="has-text-centered mt-2">Processor Architecture Diagram</figcaption>
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="img/EE25/bubble.png" style="object-fit: contain;">
+            <figcaption class="has-text-centered mt-2">Pipeline Bubble Visualization</figcaption>
           </figure>
         </div>
 
-        <div class="content">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-
+        <div class="tags mt-4">
+          <span class="tag">VHDL</span>
+          <span class="tag">FPGA</span>
+          <span class="tag">ARM CPU</span>
+          <span class="tag">Pipelining</span>
+          <span class="tag">Digital Design</span>
+          <span class="tag">Xilinx</span>
         </div>
 
       </section>
@@ -552,39 +543,75 @@
       </footer>
     </div>
   </div>
+
+
 
   <div id="project-3-modal" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Embedded Smart Watch Mini-Golf Game</p>
         <button class="delete" aria-label="close"></button>
       </header>
+
       <section class="modal-card-body">
-        <div id="project-3-modal-carousel" class="carousel">
+        <div class="content">
+          <p>
+            <strong>Project Repository:</strong> 
+            <a href="https://github.com/jacobagerson/EE14_Golf_Game" target="_blank">
+              github.com/jacobagerson/EE14_Golf_Game
+            </a>
+          </p>
+
+          <p>Developed an interactive mini-golf game running on an embedded STM32 Nucleo microcontroller with a 1.69-inch LCD display. The game uses an MPU-6050 6-axis IMU to detect device motion and tilt for controlling the golf club angle and ball trajectory. Players tilt the smartwatch to aim and swing at virtual golf balls on various challenging courses.</p>
+
+          <h2 class="title is-4">Hardware Components</h2>
+          <ul>
+            <li>STM32 Nucleo-L476RG microcontroller</li>
+            <li>InvenSense MPU-6050 6-axis IMU for motion detection</li>
+            <li>1.69-inch 240x280 pixel LCD display (ST7789 driver)</li>
+            <li>Li-ion battery with charging circuitry</li>
+            <li>Custom 3D-printed enclosure</li>
+          </ul>
+
+          <h2 class="title is-4">Software Features</h2>
+          <ul>
+            <li>Real-time IMU sensor fusion algorithms for accurate tilt detection</li>
+            <li>Physics-based golf ball simulation with gravity and friction</li>
+            <li>Multiple challenging golf courses with obstacles</li>
+            <li>Score tracking and leaderboard functionality</li>
+            <li>Touch-optimized UI for small display</li>
+          </ul>
+        </div>
+
+        <div id="project-3-modal-carousel" class="carousel mt-5">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <video width="100%" height="100%" controls style="background-color: #000;">
+              <source src="img/EE14/embedded_demo.MOV" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption class="has-text-centered mt-2">Gameplay Demo</figcaption>
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <video width="100%" height="100%" controls style="background-color: #000;">
+              <source src="img/EE14/chang_embedded.MOV" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption class="has-text-centered mt-2">Device Control Demo</figcaption>
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="img/EE14/fin_prod.png" style="object-fit: contain;">
+            <figcaption class="has-text-centered mt-2">Final Prototype</figcaption>
           </figure>
         </div>
 
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
+        <div class="tags mt-4">
+          <span class="tag">STM32</span>
+          <span class="tag">Embedded C</span>
+          <span class="tag">IMU</span>
+          <span class="tag">LCD Display</span>
+          <span class="tag">Sensor Fusion</span>
+          <span class="tag">Game Development</span>
         </div>
 
       </section>
@@ -594,38 +621,89 @@
     </div>
   </div>
 
+
+
+
   <div id="project-4-modal" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Chrome Dinosaur Game Hardware Accelerator in VHDL</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <div id="project-4-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
+        <div class="content">
+          <p>
+            <strong>Project Repository:</strong> 
+            <a href="https://github.com/jacobagerson/Jumbo_Dash" target="_blank">
+              github.com/jacobagerson/Jumbo_Dash
+            </a>
+          </p>
+
+          <p>Implemented a hardware-accelerated version of Chrome's offline dinosaur game on an Upduino ICE40UP5K FPGA. The game logic and animation are implemented in VHDL with VGA output to a standard monitor. Players use an old-school NES controller to jump, crouch and navigate the start and end screens!</p>
+          <br>
+          <p>Watch me playing Jumbo Dash during our final project presentation below!</p>
+
+          <!-- Hero Video -->
+        <figure class="mb-5">
+          <video
+            controls
+            preload="metadata"
+            style="background-color: #000;"
+          >
+            <source
+              src="img/ES4/me_jumbo.mp4"
+              type="video/mp4"
+            >
+            Your browser does not support the video tag.
+          </video>
+        </figure>
+
+
+          <h2 class="title is-4">Hardware Specifications</h2>
+          <ul>
+            <li>Upduino 3.1 development board with Lattice ICE40UP5K FPGA</li>
+            <li>VGA output (640x480 @ 60Hz) to standard monitor</li>
+            <li>2 push buttons for game input (jump and crouch controls)</li>
+            <li>Implemented entirely in VHDL for hardware acceleration</li>
+          </ul>
+
+          <h2 class="title is-4">Game Features</h2>
+          <ul>
+            <li>Real-time sprite rendering and collision detection</li>
+            <li>Progressive difficulty with increasing obstacle speed</li>
+            <li>Score counter and high-score tracking in FPGA memory</li>
+            <li>Physics-based jump mechanics with gravity simulation</li>
+            <li>Multiple obstacle types and terrain variations</li>
+          </ul>
+
+          <h2 class="title is-4">Technical Implementation</h2>
+          <p>The design features a VGA controller for display output, sprite graphics engine for rendering game objects, and a state machine for game logic. Collision detection is performed in real-time using pixel-perfect algorithms. The entire design was synthesized and placed-and-routed on the ICE40UP5K, utilizing approximately 40% of available logic resources.</p>
         </div>
 
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
+        <div id="project-4-modal-carousel" class="carousel mt-5">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/ES4/game_outline.png" style="object-fit: contain;">
+            <figcaption class="has-text-centered mt-2">Game Architecture Outline</figcaption>
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/ES4/start_screen.jpg" style="object-fit: contain;">
+            <figcaption class="has-text-centered mt-2">Game Start Screen</figcaption>
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/ES4/nes.png" style="object-fit: contain;">
+            <figcaption class="has-text-centered mt-2">NES-Inspired Graphics</figcaption>
+          </figure>
+          
+        </div>
+
+        <div class="tags mt-4">
+          <span class="tag">VHDL</span>
+          <span class="tag">FPGA</span>
+          <span class="tag">Game Development</span>
+          <span class="tag">VGA Graphics</span>
+          <span class="tag">Hardware Acceleration</span>
+          <span class="tag">Lattice ICE40</span>
         </div>
 
       </section>
