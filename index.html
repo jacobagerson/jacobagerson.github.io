@@ -13,12 +13,12 @@
   <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <div class="navbar-item is-hidden-desktop">
-        <a href="https://github.com/jacobagerson" class="icon is-large has-text-light">
+        <a href="https://github.com/jacobagerson" target="_blank" class="icon is-large has-text-light">
           <i class="fab fa-2x fa-github"></i>
         </a>
       </div>
       <div class="navbar-item is-hidden-desktop">
-        <a href="https://linkedin.com/in/jacob-gerson" class="icon is-large has-text-light">
+        <a href="https://linkedin.com/in/jacob-gerson" target="_blank" class="icon is-large has-text-light">
           <i class="fab fa-2x fa-linkedin-in"></i>
         </a>
       </div>
@@ -26,12 +26,12 @@
     <div class="navbar-menu">
       <div class="navbar-end">
         <div class="navbar-item">
-          <a href="https://github.com/jacobagerson" class="icon is-large has-text-light">
+          <a href="https://github.com/jacobagerson" target="_blank" class="icon is-large has-text-light">
             <i class="fab fa-2x fa-github"></i>
           </a>
         </div>
         <div class="navbar-item">
-          <a href="https://linkedin.com/in/jacob-gerson" class="icon is-large has-text-light">
+          <a href="https://linkedin.com/in/jacob-gerson" target="_blank" class="icon is-large has-text-light">
             <i class="fab fa-2x fa-linkedin-in"></i>
           </a>
         </div>
@@ -50,12 +50,18 @@
           <h2 class="subtitle has-text-white is-4" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.6);">
             Electrical Engineering Student at Tufts!
           </h2>
-          <p>
+          <p class="buttons is-centered">
             <a href="mailto:jacobagerson@gmail.com" class="button is-white is-outlined is-rounded">
               <span class="icon">
                 <i class="fas fa-envelope"></i>
               </span>
               <span>Contact Me</span>
+            </a>
+            <a href="Jacob_Gerson_Resume.pdf" download class="button is-white is-outlined is-rounded">
+              <span class="icon">
+                <i class="fas fa-download"></i>
+              </span>
+              <span>Resume</span>
             </a>
           </p>
         </div>
@@ -68,14 +74,14 @@
     <div class="container">
       <h1 class="title">About Me</h1>
       <hr />
-      <p>   I'm an Electrical Engineering student at Tufts University with a passion for embedded systems, hardware design, and optical technologies. My work experience spans from employing embedded systems to developing Python-based hardware integration frameworks. I have also completed academic projects in PCB schematic and layout capture, FPGA programming and Digital IC design!
+      <p>   I'm an Electrical Engineering student at Tufts University with a passion for hardware design, embedded systems and optical technologies. My work experience spans from employing embedded logic in real-world products to developing Python-based hardware integration frameworks. I have also completed academic projects in PCB schematic and layout capture, FPGA programming and Digital IC design!
       </p>
       <br />
-      <p>   I love working on challenging engineering problems that open up new opportunities for learning and growth. This portfolio showcases some of my key experiences and projects over the past few years - thank you for visiting! Feel free to reach out and connect over <a href="https://www.linkedin.com/in/jacob-gerson">LinkedIn</a> or <a href="mailto:jacobagerson@gmail.com">email</a> :)
+      <p>   I love working on challenging engineering problems that open up new opportunities for learning and growth. This portfolio showcases some of my key experiences and projects over the past few years - thank you for visiting! Feel free to reach out and connect over <a href="https://www.linkedin.com/in/jacob-gerson" target="_blank">LinkedIn</a> or <a href="mailto:jacobagerson@gmail.com">email</a> :)
       </p>
-
     </div>
   </section>
+
   <section class="section">
     <div class="container">
       <h1 class="title">Experience</h1>
@@ -97,7 +103,7 @@
             <p> Helping make Tufts' EN1 "Engineering in the Kitchen" and EE14 "Embedded Systems" courses awesome!
               
             <ul>
-              <li>Teaching engineering students to run uPython, drive peripheral devices, leverage IoT, and build webpages on ESP32s</li>
+              <li>Teaching engineering students to run MicroPython, drive peripheral devices, leverage IoT, and build webpages on ESP32s</li>
               <li>Leading labs/office hours focused on STM MCUs, with topics in UART, Timing, SPI, ADC, and memory maps</li>
             </ul>
             <div class="tags">
@@ -136,7 +142,7 @@
               <li>Programmed from scratch a Tkinter GUI to support installation, calibration, and operation of Dottir’s patented Swept Source Raman Spectroscopy system</li>
               <li>Developed Python drivers using LabVIEW-generated DLLs to interface with Thor Labs' power meters, photon counters, and wave meters</li>
               <li>Designed a modular, object-oriented software framework with clear documentation for additional experimental workflows</li>
-              <li>Engaged with Boston climate tech R\&D sector, gaining experience in early-stage innovation, venture development, and sustainability-focused entrepreneurship</li>
+              <li>Engaged with Boston climate tech R&D sector, gaining experience in early-stage innovation, venture development, and sustainability-focused entrepreneurship</li>
             </ul>
             <div class="tags">
               <span class="tag">python</span>
@@ -210,6 +216,7 @@
               <span class="tag">arduino</span>
               <span class="tag">flask</span>
               <span class="tag">javascript</span>
+              <span class="tag">html</span>
             </div>
           </div>
         </div>
@@ -245,49 +252,84 @@
     </div>
   </section>
 
+
   
   <section class="section">
     <div class="container">
       <h1 class="title">Projects</h1>
       <hr />
-      <div class="tile is-ancestor">
+     <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
+          <div class="tile" style="display: flex; flex-wrap: wrap;">
+            
+            <div class="tile is-parent" style="flex: 1; min-width: 250px;">
               <article class="tile is-child notification">
-                <p class="title has-text-centered">Synth-esthesia: A Wireless ESP32-based Drawing Instrument</p>
+                <p class="title has-text-centered is-size-5" style="height: 5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                  Synth-esthesia: Wireless ESP32 Instrument
+                </p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/EMID/fin_product.png" style="object-fit: contain;">
+                  <img 
+                    class="modal-trigger" 
+                    data-target="project-1-modal" 
+                    src="img/EMID/fin_product.png" 
+                    style="object-fit: cover; object-position: center; width: 100%; height: 100%; border-radius: 4px;"
+                    alt="Synth-esthesia Product"
+                  >
                 </figure>
               </article>
             </div>
 
-            <div class="tile is-parent">
+            <div class="tile is-parent" style="flex: 1; min-width: 250px;">
               <article class="tile is-child notification">
-                <p class="title has-text-centered">5 Stage Pipelined Arm CPU (VHDL)</p>
+                <p class="title has-text-centered is-size-5" style="height: 5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                  Chrome Dino Accelerator (VHDL)
+                </p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/EE25/pro_diagram.png" style="object-fit: contain;">
+                  <img 
+                    class="modal-trigger" 
+                    data-target="project-2-modal" 
+                    src="img/ES4/start_screen.jpg" 
+                    style="object-fit: cover; object-position: top center; width: 100%; height: 100%; border-radius: 4px;"
+                    alt="Dino Game Screen"
+                  >
                 </figure>
               </article>
             </div>
 
-            <div class="tile is-parent">
+            <div class="tile is-parent" style="flex: 1; min-width: 250px;">
               <article class="tile is-child notification">
-                <p class="title has-text-centered">Embedded Smart Watch Mini-Golf Game</p>
+                <p class="title has-text-centered is-size-5" style="height: 5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                  Embedded Smart Watch Mini-Golf
+                </p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-3-modal" src="img/EE14/fin_prod.png" style="object-fit: contain;">
+                  <img 
+                    class="modal-trigger" 
+                    data-target="project-3-modal" 
+                    src="img/EE14/fin_prod.png" 
+                    style="object-fit: cover; object-position: center; width: 100%; height: 100%; border-radius: 4px;"
+                    alt="Smart Watch Golf"
+                  >
                 </figure>
               </article>
             </div>
 
-            <div class="tile is-parent">
+            <div class="tile is-parent" style="flex: 1; min-width: 250px;">
               <article class="tile is-child notification">
-                <p class="title has-text-centered">Chrome Dino Accelerator (VHDL)</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/ES4/start_screen.jpg" style="object-fit: contain;">
+                <p class="title has-text-centered is-size-5" style="height: 5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                  5 Stage Pipelined Arm CPU (VHDL)
+                </p>
+                <figure class="image is-4by3" style="background-color: white; border-radius: 4px;">
+                  <img 
+                    class="modal-trigger" 
+                    data-target="project-4-modal" 
+                    src="img/EE25/pro_diagram.png" 
+                    style="object-fit: contain; width: 100%; height: 100%; padding: 5px;"
+                    alt="CPU Pipeline Diagram"
+                  >
                 </figure>
               </article>
             </div>
+
           </div>
         </div>
       </div>
@@ -328,10 +370,10 @@
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://github.com/jacobagerson" class="icon is-large">
+            <a href="https://github.com/jacobagerson" target="_blank" class="icon is-large">
               <i class="fab fa-2x fa-github"></i>
             </a>
-            <p class="heading"><a href="https://github.com/jacobagerson">github.com/jacobagerson</a></p>
+            <p class="heading"><a href="https://github.com/jacobagerson" target="_blank">github.com/jacobagerson</a></p>
           </div>
         </div>
         <div class="level-item has-text-centered">
@@ -352,10 +394,10 @@
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://www.linkedin.com/in/jacob-gerson" class="icon is-large">
+            <a href="https://www.linkedin.com/in/jacob-gerson" target="_blank" class="icon is-large">
               <i class="fab fa-2x fa-linkedin-in"></i>
             </a>
-            <p class="heading"><a href="https://www.linkedin.com/in/jacob-gerson">linkedin</a></p>
+            <p class="heading"><a href="https://www.linkedin.com/in/jacob-gerson" target="_blank">linkedin</a></p>
           </div>
         </div>
       </nav>
@@ -387,8 +429,14 @@
             </a>
           </p>
 
-      <p>Synth-esthesia is an electronic musical instrument that mimics the experience of synesthesia, a nuerological condition where stimulation of one sensory pathway prompts automatic experiences in a second sensory pathway. Synth-esthesia enables users to interact primarily visually with the painting interface using the wireless paintbrush, and explore a sonic atmosphere by discovering which sounds and effects correspond to which visual cues, emulating the experience of synesthesia. I was the sole hardware engineer on the 3-person team building the instrument, and was responsible for designing and fabricating the custom ESP32 IMU wireless remote that serves as the instrument's primary input device!</p>
+      <p>Synth-esthesia is an electronic musical instrument that mimics the experience of synesthesia, a nuerological condition where stimulation of one sensory pathway prompts automatic experiences in a second sensory pathway. Synth-esthesia enables users to interact primarily visually with the painting interface using the wireless paintbrush, and explore a sonic atmosphere by discovering which sounds and effects correspond to which visual cues, emulating the experience of synesthesia. 
+        
+      </p>
   
+      <br>
+
+      <p> I was the sole hardware engineer on the 3-person team building the instrument, and was responsible for designing and fabricating the custom ESP32 IMU wireless remote that serves as the instrument's primary input device!<</p>
+
       <br>
 
       <p>Below is my part of our group's final project presentation. I describe the broad technical specifications of the remote, and the role it plays as a part of the instrument!</p>
@@ -467,7 +515,7 @@
       <div class="tags mt-4">
         <span class="tag">ESP32</span>
         <span class="tag">IMU</span>
-        <span class="tag">Sensor Fusion</span>
+        <span class="tag">I2C</span>
         <span class="tag">Wireless</span>
         <span class="tag">Custom PCB</span>
         <span class="tag">Embedded C++</span>
@@ -483,148 +531,7 @@
 </div>
 
 
-
   <div id="project-2-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">5 Stage Pipelined ARM CPU in VHDL</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div class="content">
-          <p>
-            <strong>Project Repository:</strong> 
-            <a href="https://github.com/jacobagerson/EE25_Pipelined_CPU" target="_blank">
-              github.com/jacobagerson/EE25_Pipelined_CPU
-            </a>
-          </p>
-
-          <p>Designed and implemented a 5-stage pipelined ARM CPU architecture in VHDL as part of an advanced digital design course. The processor implements a subset of the ARM instruction set with a classical 5-stage pipeline (Fetch, Decode, Execute, Memory, Write-back) optimized for performance and resource efficiency on FPGA.</p>
-
-          <h2 class="title is-4">Key Features</h2>
-          <ul>
-            <li>5-stage pipeline architecture for increased throughput</li>
-            <li>Subset of ARM instruction set support (data processing, memory operations, branches)</li>
-            <li>Forwarding and hazard detection logic to minimize pipeline stalls</li>
-            <li>16-bit data width with 32-bit program counter</li>
-            <li>Implemented in VHDL and synthesized on Xilinx FPGA</li>
-            <li>Full testbench with comprehensive test vectors</li>
-          </ul>
-
-          <h2 class="title is-4">Architecture Overview</h2>
-          <p>The pipeline stages include instruction fetching from ROM, instruction decoding with register file access, ALU execution, memory read/write operations, and register write-back. The design includes hazard detection for data dependencies and control flow changes.</p>
-        </div>
-
-        <div id="project-2-modal-carousel" class="carousel mt-5">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/EE25/pro_diagram.png" style="object-fit: contain;">
-            <figcaption class="has-text-centered mt-2">Processor Architecture Diagram</figcaption>
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/EE25/bubble.png" style="object-fit: contain;">
-            <figcaption class="has-text-centered mt-2">Pipeline Bubble Visualization</figcaption>
-          </figure>
-        </div>
-
-        <div class="tags mt-4">
-          <span class="tag">VHDL</span>
-          <span class="tag">FPGA</span>
-          <span class="tag">ARM CPU</span>
-          <span class="tag">Pipelining</span>
-          <span class="tag">Digital Design</span>
-          <span class="tag">Xilinx</span>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-
-
-  <div id="project-3-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Embedded Smart Watch Mini-Golf Game</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-
-      <section class="modal-card-body">
-        <div class="content">
-          <p>
-            <strong>Project Repository:</strong> 
-            <a href="https://github.com/jacobagerson/EE14_Golf_Game" target="_blank">
-              github.com/jacobagerson/EE14_Golf_Game
-            </a>
-          </p>
-
-          <p>Developed an interactive mini-golf game running on an embedded STM32 Nucleo microcontroller with a 1.69-inch LCD display. The game uses an MPU-6050 6-axis IMU to detect device motion and tilt for controlling the golf club angle and ball trajectory. Players tilt the smartwatch to aim and swing at virtual golf balls on various challenging courses.</p>
-
-          <h2 class="title is-4">Hardware Components</h2>
-          <ul>
-            <li>STM32 Nucleo-L476RG microcontroller</li>
-            <li>InvenSense MPU-6050 6-axis IMU for motion detection</li>
-            <li>1.69-inch 240x280 pixel LCD display (ST7789 driver)</li>
-            <li>Li-ion battery with charging circuitry</li>
-            <li>Custom 3D-printed enclosure</li>
-          </ul>
-
-          <h2 class="title is-4">Software Features</h2>
-          <ul>
-            <li>Real-time IMU sensor fusion algorithms for accurate tilt detection</li>
-            <li>Physics-based golf ball simulation with gravity and friction</li>
-            <li>Multiple challenging golf courses with obstacles</li>
-            <li>Score tracking and leaderboard functionality</li>
-            <li>Touch-optimized UI for small display</li>
-          </ul>
-        </div>
-
-        <div id="project-3-modal-carousel" class="carousel mt-5">
-          <figure class="image is-4by3 carousel-cell">
-            <video width="100%" height="100%" controls style="background-color: #000;">
-              <source src="img/EE14/embedded_demo.MOV" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <figcaption class="has-text-centered mt-2">Gameplay Demo</figcaption>
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <video width="100%" height="100%" controls style="background-color: #000;">
-              <source src="img/EE14/chang_embedded.MOV" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <figcaption class="has-text-centered mt-2">Device Control Demo</figcaption>
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/EE14/fin_prod.png" style="object-fit: contain;">
-            <figcaption class="has-text-centered mt-2">Final Prototype</figcaption>
-          </figure>
-        </div>
-
-        <div class="tags mt-4">
-          <span class="tag">STM32</span>
-          <span class="tag">Embedded C</span>
-          <span class="tag">IMU</span>
-          <span class="tag">LCD Display</span>
-          <span class="tag">Sensor Fusion</span>
-          <span class="tag">Game Development</span>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-
-
-
-  <div id="project-4-modal" class="modal">
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
@@ -681,7 +588,7 @@
           <p>The design features a VGA controller for display output, sprite graphics engine for rendering game objects, and a state machine for game logic. Collision detection is performed in real-time using pixel-perfect algorithms. The entire design was synthesized and placed-and-routed on the ICE40UP5K, utilizing approximately 40% of available logic resources.</p>
         </div>
 
-        <div id="project-4-modal-carousel" class="carousel mt-5">
+        <div id="project-2-modal-carousel" class="carousel mt-5">
           <figure class="image is-4by3 carousel-cell">
             <img src="img/ES4/game_outline.png" style="object-fit: contain;">
             <figcaption class="has-text-centered mt-2">Game Architecture Outline</figcaption>
@@ -704,6 +611,162 @@
           <span class="tag">VGA Graphics</span>
           <span class="tag">Hardware Acceleration</span>
           <span class="tag">Lattice ICE40</span>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-3-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Embedded Smart Watch Mini-Golf Game</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+
+      <section class="modal-card-body">
+        <div class="content">
+          <p>
+            <strong>Project Repository:</strong> 
+            <a href="https://github.com/jacobagerson/Embedded_Systems_SPI_MiniGolf" target="_blank">
+              github.com/jacobagerson/Embedded_Systems_SPI_MiniGolf
+            </a>
+          </p>
+
+          <p>Developed an interactive mini-golf game running on an embedded STM32 Nucleo microcontroller with a 1.69-inch LCD display. The game uses an MPU-6050 6-axis IMU to detect device motion and tilt for controlling the golf club angle and ball trajectory. Players tilt the smartwatch to aim and swing at virtual golf balls on various challenging courses.</p>
+
+          Check out this demo video where I showcase gameplay and device functionality!
+
+          <figure class="mb-5">
+            <video
+              controls
+              preload="metadata"
+              style="background-color: #000;"
+            >
+              <source
+                src="img/EE14/embedded_demo.mp4"
+                type="video/mp4"
+              >
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+
+          <h2 class="title is-4">Hardware Components</h2>
+          <ul>
+            <li>STM32 Nucleo-L432KC microcontroller</li>
+            <li>InvenSense MPU-6050 6-axis IMU for motion detection</li>
+            <li>1.69-inch 240x280 pixel LCD display (SPI Driver)</li>
+            <li>Custom 3D-printed enclosure</li>
+          </ul>
+
+          <h2 class="title is-4">Software Features</h2>
+          <ul>
+            <li>Real-time IMU sensor fusion algorithms for accurate tilt detection</li>
+            <li>Physics-based golf ball simulation with gravity, friction and collision physics</li>
+            <li>Random course and ball location generation</li>
+            <li>Score and performance tracking</li>
+          </ul>
+        </div>
+
+        <p> This is an awesome video of my professor playing the game! This was 100% the highlight of this project.</p>
+        <br>
+
+        <figure class="mb-5">
+            <video
+              controls
+              preload="metadata"
+              style="background-color: #000;"
+            >
+              <source
+                src="img/EE14/chang_embedded.mp4"
+                type="video/mp4"
+              >
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+
+        <div class="tags mt-4">
+          <span class="tag">STM32</span>
+          <span class="tag">Embedded C</span>
+          <span class="tag">IMU</span>
+          <span class="tag">SPI</span>
+          <span class="tag">LCD Display</span>
+          <span class="tag">Game Development</span>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">5 Stage Pipelined ARM CPU in VHDL</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div class="content">
+          <p>
+            <strong>Project Repository:</strong> 
+            <a href="https://github.com/jacobagerson/EE25_Pipelined_CPU" target="_blank">
+              github.com/jacobagerson/EE25_Pipelined_CPU
+            </a>
+          </p>
+
+          <p>Designed and implemented a 5-stage pipelined ARM CPU architecture in VHDL as part of an advanced digital design course. The processor implements a subset of the ARM instruction set with a classical 5-stage pipeline (Fetch, Decode, Execute, Memory, Write-back). The functionality of the processor was verified using several different assembly programs, was compiled through GHDL and simulated using GTKWave waveform viewer.</p>
+
+          <p>Here's a diagram demonstrating how the processor would use forwarding and stalling to handle data dependencies and control hazards</p>
+
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/EE25/bubble.png" style="object-fit: contain;">
+            <figcaption class="has-text-centered mt-2">Pipeline Bubble Visualization</figcaption>
+          </figure>
+
+
+          <h2 class="title is-4">Key Features</h2>
+          <ul>
+            <li>5-stage pipeline architecture for increased throughput</li>
+            <li>Subset of ARM instruction set support (data processing, memory operations, branches)</li>
+            <li>Forwarding and hazard detection logic to minimize pipeline stalls and hazard</li>
+            <li>Fully custom written testbench with comprehensive test vectors</li>
+          </ul>
+
+          <h2 class="title is-4">Architecture Overview</h2>
+          <p>The pipeline stages include instruction fetching from ROM, instruction decoding with register file access, ALU execution, memory read/write operations, and register write-back. The design includes hazard detection for data dependencies and control flow changes.</p>
+
+          <h2 class="title is-4">Technical Implementation</h2>
+          <p>Here's an example ARM assembly program that the CPU executed, demonstrating arithmetic capability, memory access, and load-store operations. Branching is not implemented in this example, but the processor supports it. </p>
+        </div>
+
+
+        <div id="project-4-modal-carousel" class="carousel mt-5">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/EE25/tt.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/EE25/sequence.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/EE25/p1_a.png">
+          </figure>
+        </div>
+
+        <div class="tags mt-4">
+          <span class="tag">VHDL</span>
+          <span class="tag">FPGA</span>
+          <span class="tag">ARM CPU</span>
+          <span class="tag">Pipelining</span>
+          <span class="tag">Digital Design</span>
         </div>
 
       </section>
